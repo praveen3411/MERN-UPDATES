@@ -1,0 +1,250 @@
+<!-- In Html tables are quite good for structure multiple api data -->
+<!-- In HTML we are defining <table></table> and inside of table it contains <tr> which is table row inside table row <th> contains table header  -->
+<!-- again when we need to define table colums we need to take <tr> and we need to define <td> table data Example you can see below -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Tables</title>
+    <style>
+      tr,
+      td {
+        /* border-radius: 10px; */
+        text-align: center;
+      }
+      .pro tr:nth-child(2) {
+        color: red;
+      }
+      .pro td:nth-child(even) {
+        color: rebeccapurple;
+      }
+      .pro td:nth-child(odd):hover {
+        color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 style="text-align: center; color: blue">HTML TABLES</h2>
+    <table border="1px solid black" align="center">
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Town</th>
+        <th>Work</th>
+      </tr>
+      <tr>
+        <td>Praveen</td>
+        <td>25</td>
+        <td>Bangalore</td>
+        <td>Software developer</td>
+      </tr>
+      <tr>
+        <td>Hari</td>
+        <td>25</td>
+        <td>Bangalore</td>
+        <td>Business Man</td>
+      </tr>
+    </table>
+    <hr />
+    <table
+      border="1px"
+      align="center"
+      style="text-align: center; border-collapse: collapse; width: 100%"
+    >
+      <thead style="background-color: antiquewhite">
+        <tr>
+          <th style="width: 40%">Company</th>
+          <th>Experience</th>
+          <th>Current Salary</th>
+          <th>Expected Salary</th>
+        </tr>
+      </thead>
+      <tbody style="background-color: aqua">
+        <tr style="height: 50px">
+          <td>Actyv.ai</td>
+          <td>3 years</td>
+          <td>45,000</td>
+          <td>55,000</td>
+        </tr>
+        <tr>
+          <td>Orion</td>
+          <td>3 years</td>
+          <td>50,000</td>
+          <td>55,000</td>
+        </tr>
+      </tbody>
+      <tfoot style="background-color: blueviolet">
+        <tr>
+          <td style="text-align: center" colspan="4">Done</td>
+        </tr>
+      </tfoot>
+    </table>
+    <hr />
+    <table border="1px" align="center">
+      <caption>
+        School ERP
+      </caption>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <td>age</td>
+          <td>schol</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Name</th>
+          <td>age</td>
+          <td>school</td>
+        </tr>
+      </tbody>
+    </table>
+    <hr />
+    <table border="1px">
+      <thead>
+        <tr>
+          <th>One</th>
+          <th>Two</th>
+          <th colspan="2" rowspan="2">Three</th>
+          <th>Four</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td colspan="2">One</td>
+          <td>Two</td>
+          <td>Three</td>
+          <td>Four</td>
+        </tr>
+        <tr>
+          <td rowspan="2" colspan="2">one</td>
+          <td>two</td>
+          <td>three</td>
+          <td>four</td>
+        </tr>
+        <tr>
+          <td>one</td>
+          <td>two</td>
+          <td>three</td>
+          <td>four</td>
+        </tr>
+      </tbody>
+    </table>
+    <hr />
+    <table border="1px" align="center" style="text-align: center" class="pro">
+      <thead>
+        <tr>
+          <th colspan="2">Name</th>
+          <th>Age</th>
+          <th>Married</th>
+          <th>Employee</th>
+          <th>Salary</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td colspan="2">Praveen Kumar</td>
+          <td rowspan="2">25</td>
+          <td>Un-Married</td>
+          <td>Orion Express Logistics</td>
+          <td>45,000</td>
+        </tr>
+        <tr>
+          <td>Ganesh Kumar</td>
+          <td>24</td>
+          <td>Un-Married</td>
+          <td>Actyv.ai</td>
+          <td>46,000</td>
+        </tr>
+        <tr>
+          <td>Hari</td>
+          <td>25</td>
+          <td>Un-Married</td>
+          <td>Self business</td>
+          <td>50,000</td>
+        </tr>
+      </tbody>
+    </table>
+    <hr />
+    <table border="1px">
+        <colgroup>
+        <col span="2" style="background-color: gray;">
+        <col span="3" style="background-color: yellow;">
+        <col span="7" style="background-color: rebeccapurple;">
+        </colgroup>
+      <tr>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+        <th>Saturday</th>
+        <th>Sunday</th>
+      </tr>
+      <tr>
+        <td>one</td>
+        <td>two</td>
+        <td>three</td>
+        <td>Four</td>
+        <td>Five</td>
+        <td>Six</td>
+        <td>Seven</td>
+      </tr>
+      <tr>
+        <td>one</td>
+        <td>two</td>
+        <td>three</td>
+        <td>Four</td>
+        <td>Five</td>
+        <td>Six</td>
+        <td>Seven</td>
+      </tr>
+      <tr>
+        <td>one</td>
+        <td>two</td>
+        <td>three</td>
+        <td>Four</td>
+        <td>Five</td>
+        <td>Six</td>
+        <td>Seven</td>
+      </tr>
+      <tr>
+        <td>one</td>
+        <td>two</td>
+        <td>three</td>
+        <td>Four</td>
+        <td>Five</td>
+        <td>Six</td>
+        <td>Seven</td>
+      </tr>
+      <tr>
+        <td>one</td>
+        <td>two</td>
+        <td>three</td>
+        <td>Four</td>
+        <td>Five</td>
+        <td>Six</td>
+        <td>Seven</td>
+      </tr>
+      <tr>
+        <td>one</td>
+        <td>two</td>
+        <td>three</td>
+        <td>Four</td>
+        <td>Five</td>
+        <td>Six</td>
+        <td>Seven</td>
+      </tr>
+      <tr>
+        <td>one</td>
+        <td>two</td>
+        <td>three</td>
+        <td>Four</td>
+        <td>Five</td>
+        <td>Six</td>
+        <td>Seven</td>
+      </tr>
+    </table>
+  </body>
+</html>
