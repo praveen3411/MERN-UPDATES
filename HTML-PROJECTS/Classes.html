@@ -1,11 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML Classes</title>
-</head>
-<body>
-    
-</body>
+    <style>
+      .first {
+        border: 5px solid red;
+        padding: 5px;
+        border-radius: 5px;
+        text-align: center;
+        border-top-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+      }
+      .second {
+        border: 5px solid blue;
+        padding: 5px;
+        border-radius: 5px;
+      }
+      .third {
+        border: 5px solid yellow;
+        padding: 5px;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Multiple HTML Classes can share with one class name -->
+    <!-- Classes are used to find the css names, And to decorate the elements and classes can also be used in javascript to run one particular script -->
+    <!-- Example -->
+    <div class="first">
+      <div class="second">
+        <div class="third">
+          <p>First class color's Red</p>
+          <p>Second class color's blue</p>
+          <p>Third class color's yellow</p>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

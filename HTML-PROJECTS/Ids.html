@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IDS</title>
+    <style>
+      .container {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        background-color: black;
+        color: white;
+        text-decoration: none;
+      }
+      .container h3 > a {
+        /* padding: 100px; */
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- In HTML id are the unique values, For each element we need to provide one ID we cannot give same id's for different elements -->
+    <!-- Example You can see below -->
+    <div class="container">
+      <h3><a href="#home">Home</a></h3>
+      <h3><a href="#about">About</a></h3>
+      <h3><a href="#contact">Contact</a></h3>
+      <h3><a href="#login">Login</a></h3>
+      <h3><a href="#logout">Logout</a></h3>
+    </div>
+    <hr />
+    <h3 id="home">Home Page</h3>
+    <h3 id="about">About Page</h3>
+    <h3 id="contact">Contact Page</h3>
+    <h3 id="login">Login Page</h3>
+    <h3 id="logout">Logout Page</h3>
+  </body>
+</html>
