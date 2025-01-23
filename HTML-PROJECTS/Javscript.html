@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+  </head>
+  <body>
+    <div id="demo"></div>
+    <img src="" alt="" class="image" />
+    <!-- Example Light image i will show -->
+    <script>
+      function light(sw) {
+        var pic;
+        if (sw === 0) {
+          pic =
+            "https://tse2.mm.bing.net/th?id=OIP.qk3yzyz97OhnQNTsjo9_qQAAAA&pid=Api&P=0&h=220";
+        } else {
+          pic =
+            "https://www.jonmgomes.com/wp-content/uploads/2020/03/Liquid-Lightbulb-Animation-V2-800x600-1.gif";
+        }
+        document.getElementById("my_image").src = pic;
+      }
+      let count = 0;
+      function increment() {
+        count = count + 1;
+        document.getElementById("count").innerHTML = count;
+      }
+      function decrement() {
+        count = count - 1;
+        document.getElementById("count").innerHTML = count;
+      }
+    </script>
+    <div>
+      <img
+        src="https://tse2.mm.bing.net/th?id=OIP.qk3yzyz97OhnQNTsjo9_qQAAAA&pid=Api&P=0&h=220"
+        alt="Bulp Image"
+        width="200px"
+        height="200px"
+        id="my_image"
+      />
+      <button type="button" onclick="light(1)">Light On</button>
+      <button type="button" onclick="light(0)">Light Off</button>
+    </div>
+    <!-- Counter -->
+    <h1 id="count">0</h1>
+    <button type="button" id="increment" onclick="increment()">+</button>
+    <button type="button" id="decrement" onclick="decrement()">-</button>
+  </body>
+</html>
+<script>
+  document.getElementById("demo").innerHTML = "This is javascript Code";
+  document.getElementById("demo").style.fontFamily = "monospace";
+  document.getElementById("demo").style.color = "violet";
+</script>
