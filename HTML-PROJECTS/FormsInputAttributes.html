@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input Attributes</title>
+  </head>
+  <body>
+    <!-- Values -->
+    <!-- In input put tags forms are used to add the values or if we want to assign the value by default we can do that or it is the initial values -->
+    <!-- Readonly -->
+    <!-- Readonly attributes will allow just to see the not to edit -->
+    <label for="userName">UserName:</label>
+    <input
+      type="text"
+      id="userName"
+      name="uName"
+      value="Praveen Kumar yadav"
+      placeholder="Enter UserName"
+      readonly
+      autofocus
+    />
+    <input
+      type="checkbox"
+      id="vehicle1"
+      name="vehicle1"
+      value="CAR"
+      disabled
+      checked="checked"
+    />
+    <label for="vehicle1">CAR</label>
+    <label for="size">Size Check</label>
+    <input
+      type="text"
+      id="size"
+      name="size_value"
+      placeholder="Size Checker"
+      size="30"
+      minlength="10"
+      maxlength="20"
+    />
+    <!--Multiple Values-->
+    <label for="catch_files">Upload Your Images</label>
+    <input type="file" id="catch_files" name="catch_files" multiple />
+    <!-- STEP -->
+    <input type="number" id="number" name="number_values" step="5" />
+    <form action="" method="" target="">
+      <input list="browsers" />
+      <datalist id="browsers">
+        <option value="one">One</option>
+        <option value="Two">Two</option>
+        <option value="Three">Three</option>
+        <option value="Four">Four</option>
+        <option value="Five">Five</option>
+      </datalist>
+      <!-- Input Form Attributes -->
+    </form>
+  </body>
+</html>

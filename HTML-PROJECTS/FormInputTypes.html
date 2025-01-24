@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Types</title>
+  </head>
+  <body>
+    <form action="" method="" target="">
+      <!-- Input Type Button -->
+      <input type="button" value="Submit" onclick="alert('Button')" />
+      <hr />
+      <!-- Input Type Checkbox -->
+      <h2>Choose any three Foods</h2>
+      <input type="checkbox" name="Gopi" value="GOPI" id="food1" />
+      <label for="food1">GOPI</label>
+      <br />
+      <input
+        type="checkbox"
+        name="Biriyani"
+        value="BIRIYANI"
+        id="food2"
+        checked="checked"
+      />
+      <label for="food2">BIRIYANI</label>
+      <br />
+      <input
+        type="checkbox"
+        name="Sweets"
+        value="SWEETS"
+        id="food3"
+        disabled="disabled"
+      />
+      <label for="food3">SWEETS</label>
+      <hr />
+      <!-- Input Type Text -->
+      <label for="username">User Name</label>
+      <br />
+      <input
+        type="text"
+        name="uName"
+        value=""
+        id="username"
+        placeholder="Enter User Name"
+        minlength="10"
+        maxlength="15"
+      />
+      <br />
+      <label for="password">Password</label>
+      <br />
+      <input
+        type="password"
+        name="upassword"
+        id="password"
+        value=""
+        readonly
+        placeholder="Enter Password"
+      />
+      <br />
+      <br />
+      <input type="submit" value="submit" />
+      <input type="reset" value="reset" />
+      <hr />
+      <!-- Input Type Radio -->
+      <h3>What's your favorite color</h3>
+      <input type="radio" name="fav_color" id="green" value="Green" />
+      <label for="green">GREEN</label>
+      <br />
+      <input type="radio" name="fav_color" id="yellow" value="Yellow" />
+      <label for="yellow">YELLOW</label>
+      <br />
+      <input type="radio" name="fav_color" id="violet" value="Violet" />
+      <label for="violet">VIOLET</label>
+      <hr />
+      <!-- Color -->
+      <label for="choose_color">What is your Favorite Color</label>
+      <br />
+      <input type="color" id="choose_color" name="color_value" />
+      <hr />
+      <!-- Input Type Date -->
+      <label for="date_input">Date</label>
+      <br />
+      <input type="date" id="date_input" name="date_value" />
+      <br />
+      <!-- Date min and max values -->
+      <label for="dateMin">Enter Date after 2022-01-05</label>
+      <br />
+      <input type="date" id="dateMin" name="after_Two" min="2022-01-05" />
+      <br />
+      <label for="dateMax">Enter Date befor 2022-01-02</label>
+      <br />
+      <input type="date" id="dateMin" value="dateMax" max="2022-01-02" />
+      <br />
+      <!-- Date-Time-Local -->
+      <label for="date_time">Date and Time</label>
+      <br />
+      <input type="datetime-local" id="date_time" name="date_time" />
+
+      <hr />
+      <!-- E-Mail -->
+      <label for="email">Enter your E-Mail</label>
+      <br />
+      <input type="email" id="email" name="email_value" />
+      <hr />
+      <!-- Input Type Image -->
+      <label for="flower_image">Coose Flower Image</label>
+      <input
+        type="image"
+        src="https://sp.yimg.com/ib/th?id=OPHS.Zke28ExORUgoFQ474C474&o=5&pid=21.1&w=174&h=174"
+        id="flower_image"
+        name="flower_image"
+        width="300px"
+        height="300px"
+      />
+      <hr />
+      <!-- Input Type File -->
+      <label for="upload">Upload Your Image</label>
+      <br />
+      <input type="file" id="upload" name="upload" />
+      <hr />
+      <!-- Hidden tag -->
+      <label for="secret">Enter Girl Name you like :</label>
+      <br />
+      <input type="hidden" id="secret" name="secret_name" value="45678" />
+      <input type="submit" value="submit" />
+      <br />
+      <!-- Month -->
+      <label for="month">Enter Birthaday Month:</label>
+      <br />
+      <input type="month" value="month" name="month" required />
+      <br />
+      <hr />
+      <!-- Input Type Number -->
+      <label for="fav_number">Enter Fav Number</label>
+      <input type="number" id="fav_number" name="fav_number" min="0" max="12" />
+      <hr />
+      <!-- Input Type Range -->
+      <label for="vol">Choose Volume 0 to 50</label>
+      <br />
+      <input type="range" id="vol" name="vol" min="0" max="50" />
+      <br />
+      <hr />
+      <!-- Input Type Search -->
+      <label for="searcing">Search Values</label>
+      <br />
+      <input type="search" id="searcing" name="searching" />
+      <br />
+      <!-- Telephone Number -->
+      <label for="telephone">Enter Number</label>
+      <input
+        type="tel"
+        name="telephone"
+        id="telephone"
+        placeholder="123-45-678"
+        pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+        required
+      />
+      <hr />
+      <!-- Input Time -->
+      <label for="time">Time</label> <br />
+      <input type="time" id="time" name="time" />
+      <br />
+      <hr />
+      <!-- Input url -->
+       <label for="urls">Enter URL</label>
+       <br>
+       <input type="url" id="urls" name="urls" required>
+       <!-- Input Type Week -->
+        <hr>
+        <label for="week">Select Week</label>
+        <br>
+        <input type="week" id="week" name="week">
+    </form>
+  </body>
+</html>

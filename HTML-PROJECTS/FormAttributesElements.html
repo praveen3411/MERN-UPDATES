@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Attributes</title>
+  </head>
+  <body>
+    <!-- Form having action=> what action will do is it will send the form data to this serverside so it will have script to handle and excute -->
+    <!-- Form is having the target attribute which tells that broser to open windows, _blank,_self,_parent,_top -->
+    <!-- Form is having Method to get,post, -->
+    <form action="./Attributes.html" target="_blank" method="get">
+      <!-- Elements -->
+      <!-- Input Elements and attributes -->
+      <label for="fname">First Name</label>
+      <br />
+      <input
+        type="text"
+        name="firstName"
+        id="fname"
+        value=""
+        placeholder="Enter First Name"
+      />
+      <br />
+      <hr />
+      <!-- Select Element -->
+      <label for="food_items">Favorite Food</label>
+      <select name="favfood" id="food_items">
+        <option value="Gopi">Gopi</option>
+        <option value="Veg">Veg</option>
+        <option value="NonVeg">NonVeg</option>
+        <option value="All">All</option>
+      </select>
+      <br />
+      <br />
+      <label for="food_items">Favorite Food</label>
+      <select name="favfood" id="food_items" size="2">
+        <option value="Gopi">Gopi</option>
+        <option value="Veg">Veg</option>
+        <option value="NonVeg">NonVeg</option>
+        <option value="All">All</option>
+      </select>
+      <hr />
+      <!-- Multiple Selectors -->
+      <label for="Bikes">Fav Bikes</label>
+      <select name="fav_bikes" id="Bikes" size="4" multiple>
+        <option value="pulsar">Pulsar</option>
+        <option value="yamaha">Yamaha</option>
+        <option value="bmw">BMW</option>
+        <option value="suziki">Suziki</option>
+        <option value="ktm">KTM</option>
+      </select>
+      <br />
+      <hr />
+      <!-- Textarea -->
+      <textarea
+        name="comments"
+        id="reviews"
+        rows="10"
+        cols="30"
+        style="width: 200px; height: 200px"
+      >
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos labore hic quam iste ducimus. Totam exercitationem neque expedita rem placeat quam iusto! Nisi quis illum expedita repudiandae ipsa iure animi?
+       </textarea
+      >
+      <br />
+      <!-- Button -->
+      <button type="button" onclick="alert('My name is button')">
+        Click Me
+      </button>
+      <br />
+      <!-- Fieldset and legend  -->
+    </form>
+    <br />
+    <hr />
+    <form action="" method="" target="">
+      <fieldset>
+        <legend>User Data</legend>
+        <label for="uname">User Nmae</label>
+        <br />
+        <input
+          type="text"
+          name="userName"
+          id="unmae"
+          value=""
+          placeholder="user Name"
+        />
+        <br />
+        <label for="password">Password</label>
+        <br />
+        <input
+          type="password"
+          name="upassword"
+          id="password"
+          value=""
+          placeholder="password"
+        />
+        <br />
+        <input type="button" value="Submit" />
+      </fieldset>
+      <br />
+      <hr />
+      <!-- Data List -->
+      <input list="browsers" name="browser" />
+      <datalist id="browsers">
+        <option value="Edge"></option>
+        <option value="Safari"></option>
+        <option value="Google"></option>
+        <option value="Chrome"></option>
+        <option value="Microsoft"></option>
+      </datalist>
+    </form>
+  </body>
+</html>
