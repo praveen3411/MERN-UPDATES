@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <!-- In HTML Forms are very important, Why ? because We are taking the user's data and sending to the servers to get the return response -->
+    <form action="">
+      <label for="userName">UserName:</label>
+      <br />
+      <input type="text" name="userName" id="uName" placeholder="Username" />
+      <br />
+      <label for="password">Password</label>
+      <br />
+      <input type="password" name="Password" id="pass" placeholder="password" />
+      <br />
+      <input type="button" value="Submit" onclick="Buton()" />
+    </form>
+    <hr />
+    <!-- Input Buttons -->
+    <p>What is your Favorite Language in programming</p>
+    <form action="">
+      <!-- Radio Buttons -->
+      <input type="radio" name="fav_language" value="HTML" id="html" />
+      <label for="html">HTML</label>
+      <br />
+      <input type="radio" name="fav_language" value="CSS" id="css" />
+      <label for="css">CSS</label>
+      <br />
+      <input
+        type="radio"
+        name="fav_language"
+        value="JavaScript"
+        id="javascript"
+      />
+      <label for="javascript">JavaScript</label>
+    </form>
+    <hr />
+    <!-- Checkboxes -->
+    <form action="">
+      <input type="checkbox" name="vehicle1" id="vehicle1" value="Bike" />
+      <label for="vehicle1">I Have a Bike</label>
+      <br />
+      <input type="checkbox" name="vehicle2" id="vehicle2" value="Car" />
+      <label for="vehicle2"> I Have a Car</label>
+      <br />
+      <input type="checkbox" name="vehicle3" id="vehicle3" value="Boat" />
+      <label for="vehicle3">I have a Boat</label>
+    
+      
+    </form>
+  </body>
+</html>
+<script>
+  function Buton(e) {
+    // e.preventDefault();
+    let username = document.getElementById("uName");
+    let password = document.getElementById("pass");
+    console.log(username.value, password.value);
+  }
+</script>
